@@ -1,7 +1,7 @@
 import './App.css';
-import ReadingList from './components/ReadingList';
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import ReadingList from './components/ReadingList';
 import AddBook from './components/AddBook';
 
 function App() {
@@ -14,7 +14,8 @@ function App() {
           <Route path="/add-book" component={AddBook} />
         </Switch>
       </div>
-    </Router>    </div>
+    </Router>
+    </div>
   );
 }
 
