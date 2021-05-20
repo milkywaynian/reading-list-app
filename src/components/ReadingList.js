@@ -1,11 +1,11 @@
 import React from 'react';
-import { button } from 'react-bootstrap'; 
+import { Button } from 'react-bootstrap'; 
 
 function ReadingList() {
     return (
         <div>
             <h1>Reading List</h1>
-            <button type="button">Add Book</button>
+            <Button variant="primary">Add Book</Button>
             <table>
                 <tr>
                     <th>Title</th>
