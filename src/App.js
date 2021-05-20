@@ -6,6 +6,7 @@ import AddBook from './components/AddBook';
 
 function App() {
   return (
+    <div className="App">
     <Router>
       <div>
         <Switch>
@@ -14,7 +15,7 @@ function App() {
         </Switch>
       </div>
     </Router>
-
+    </div>
   );
 }
 
