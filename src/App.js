@@ -6,10 +6,11 @@ import AddBook from './components/AddBook';
 
 function App() {
   return (
-    <div className="App">
+    <div className="container-fluid">
     <Router>
       <div>
         <Switch>
+          <Route path = "/" component={ReadingList} />
           <Route path="/reading-list" component={ReadingList} />
           <Route path="/add-book" component={AddBook} />
         </Switch>
