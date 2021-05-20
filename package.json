@@ -44,7 +44,7 @@
     "webpack-cli": "^4.7.0"
   },
   "babel": {
-      "presets": [
+    "presets": [
       "babel-preset-react-app"
     ]
   }
