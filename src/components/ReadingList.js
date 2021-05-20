@@ -5,7 +5,7 @@ function ReadingList() {
     return (
         <div>
             <h1>Reading List</h1>
-            <Button variant="primary">Add Book</Button>
+            <Button variant="primary" href='/add-book'>Add Book</Button>
             <table>
                 <tr>
                     <th>Title</th>

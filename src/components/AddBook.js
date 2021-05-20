@@ -1,4 +1,5 @@
 import React from 'react';
+import {Button} from 'react-bootstrap';
 
 function AddBook(){
     return (
@@ -8,7 +9,8 @@ function AddBook(){
                 <label for="title">Title:</label>
                 <input type="text" id="title" name="title" />
                 <label for="author">author</label>
-                <input type="add" value="Add" />
+                <input type="add" />
+                <Button variant="primary" type="submit">Submit</Button>
             </form>
         </>
             )
