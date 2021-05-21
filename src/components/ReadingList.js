@@ -19,6 +19,18 @@ import { Button } from 'react-bootstrap';
 // }
 
 class ReadingList extends React.Component {
+
+    constructor(props) {
+        super(props) 
+        this.state = {
+                title: "Harry Potter",
+                author: "Joanne Rowling",
+                read: false
+            };
+        
+    }
+
+   
     render() {
         return (
             <div>
@@ -26,9 +38,9 @@ class ReadingList extends React.Component {
             <Button variant="primary" href='/add-book'>Add Book</Button>
             <table>
                 <tr>
-                    <th>Title</th>
-                    <th>Author</th>
-                    <th>Read</th>
+                    <th>{this.state.title}</th>
+                    <th>{this.state.author}</th>
+                    <th>{this.state.read}</th>
                 </tr>
             </table>
         </div>
