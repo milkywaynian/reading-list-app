@@ -23,9 +23,11 @@ class ReadingList extends React.Component {
     constructor(props) {
         super(props) 
         this.state = {
-                title: "Harry Potter",
-                author: "Joanne Rowling",
-                read: false
+            books: [
+                    {title: "Harry Potter", author: "Joanne Rowling", read: false},
+                    {title: "Cakes in Bloom", author: "Peggy Porschen", read: true},
+                    {title: "example ", author: "example2", read: true}
+                    ]  
             };
         
     }
@@ -38,9 +40,15 @@ class ReadingList extends React.Component {
             <Button variant="primary" href='/add-book'>Add Book</Button>
             <table>
                 <tr>
-                    <th>{this.state.title}</th>
-                    <th>{this.state.author}</th>
-                    <th>{this.state.read}</th>
+                    <th>{this.state.books.map(
+                        (book,index) => (<p key ={index}>{book.title}</p>)
+                    )}</th>
+                    <th>{this.state.books.map(
+                        (book,index) => (<p key ={index}>{book.author}</p>)
+                    )}</th>
+                    <th>{this.state.books.map(
+                        (book,index) => (<p key ={index}>{book.read}</p>)
+                    )}</th>
                 </tr>
             </table>
         </div>
