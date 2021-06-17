@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap'; 
+import BookItem from './BookItem';
 
 // function ReadingList() {
 //     return (
@@ -39,17 +40,20 @@ class ReadingList extends React.Component {
             <h1>Reading List</h1>
             <Button variant="primary" href='/add-book'>Add Book</Button>
             <table>
-                <tr>
-                    <th>{this.state.books.map(
+                {/* <tr>
+                    <td>{this.state.books.map(
                         (book,index) => (<p key ={index}>{book.title}</p>)
-                    )}</th>
-                    <th>{this.state.books.map(
+                    )}</td>
+                    <td>{this.state.books.map(
                         (book,index) => (<p key ={index}>{book.author}</p>)
-                    )}</th>
-                    <th>{this.state.books.map(
+                    )}</td>
+                    <td>{this.state.books.map(
                         (book,index) => (<p key ={index}>{book.read}</p>)
-                    )}</th>
-                </tr>
+                    )}</td>
+                </tr> */}
+                <tbody>
+                {this.state.books.map((book,index) => <BookItem book = {book} index={index}/>) }
+                </tbody>
             </table>
         </div>
         )
